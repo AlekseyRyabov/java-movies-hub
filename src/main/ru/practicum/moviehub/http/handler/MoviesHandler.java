@@ -42,7 +42,7 @@ public class MoviesHandler extends BaseHttpHandler {
         }
     }
 
-    private void handleDeleteRequest(HttpExchange httpExchange) throws IOException{
+    private void handleDeleteRequest(HttpExchange httpExchange) throws IOException {
         String path = httpExchange.getRequestURI().getPath();
         String[] pathParts = path.split("/");
         if (pathParts.length == 3) {
